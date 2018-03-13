@@ -16,7 +16,9 @@ RESOURCES += icons/icons.qrc
 
 # Custom config
 QT += widgets
-QMAKE_CXXFLAGS += -std=c++14 -Wall
-#CONFIG += release
-CONFIG += debug
+QMAKE_CXXFLAGS += -std=c++14
+CONFIG += release
+#CONFIG += debug
 QMAKE_POST_LINK=$(STRIP) $(TARGET)
+target.path = /usr/local/bin/
+INSTALLS += target
